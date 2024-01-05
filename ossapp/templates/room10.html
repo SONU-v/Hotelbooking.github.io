@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+	  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" >
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <title>Hotel Booking Website</title>
+	<title>Document</title>
+	<style>
+       
+        .outer6
+        {
+            height: 600px;
+            width: 1500px;
+           
+        }
+        .outer6 img
+        {
+            height: 500px;
+            width: 1500px;
+
+           
+        }
+       
+        .outer2
+        {
+            height: 500px;
+            width: 1500px;
+
+            margin: 10px;
+        }
+        .outer3
+        {
+            height: 290px;
+            width: 500px;
+            color:#fff;
+            float: left;
+            margin-top:250px;
+        	margin-left:200px;
+
+
+        }
+        .outer4
+        {
+
+            height: 500px;
+            width: 500px;
+            margin-top:250px;
+            float: right;
+        	margin-right:200px;
+
+
+            
+        }
+        .red
+        {
+            height: 50px;
+            width: 700px;
+            color:black;
+            margin: 20px;
+            font-size: 25px;
+
+        }
+
+
+
+
+body
+{
+	background-color:#fff;
+   }
+
+
+
+
+
+
+
+.outer
+        {
+            height: 450px;
+            width: 1500px;
+            margin: 0px;
+            padding: 50px;
+
+        }
+
+        .row5
+        {
+            height: 350px;
+            width: 600px;
+            color: white;
+            float: left;
+            font-size:large;
+        }
+        .row2 img
+        {
+            height: 350px;
+            width: 600px;
+            background-color: red;
+            float: right;
+        }
+
+
+ .slider
+ {
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+ }
+
+ .row nav{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+ }
+
+ .header
+ {
+
+position: absolute;
+  height: 50px;
+  width: 1500px;
+ }
+ .header2
+ {
+
+  height: 50px;
+  width: 850px;
+  float: right;
+  margin-top: 50px;
+
+
+ }
+ .header3
+ {
+
+  position: absolute;
+  height: 50px;
+  width: 650px;
+  float: left;
+  margin:40px;
+
+  color:black;
+
+
+ }
+.header3 h2
+{
+margin-top:8px;
+}
+
+
+ .header2 ul
+ {
+  list-style-type:none;
+ }
+
+ .header2 ul li
+ {
+  display: inline-block;
+  color: white;
+ }
+ .header2 ul li a
+{
+color:black;
+text-decoration:none;
+padding: 10px;
+padding-top:20px;
+margin: 15px;
+}
+
+.header2 ul li a:hover
+{
+
+  box-shadow: 0 0 6px 0 #00d7c3 inset, 0 0 10px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+  background-color: #00d7c3;
+}
+.content
+{
+  text-align: center;
+  position: absolute;
+  margin-top: 160px;
+
+}
+.content h2{
+  font-size: 110px;
+  color:#fff;
+  font-weight: 450;
+  margin: 100px;
+
+
+
+
+}
+
+
+.content a{
+  text-decoration: none;
+  display: inline-block;
+  color:#fff;
+  font-size: 20px;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  margin-top: 160px;
+  padding: 14px 70px;
+  margin-right: 60px;
+  margin-left: 50px;
+}
+.content a:hover{
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+  background-color: red;
+
+
+}
+
+.custmer
+{
+  height: 200px;
+  width: 1500px;
+
+  margin-top: 10px;
+  margin-left: 2px;
+}
+.hero1
+{
+  height: 200px;
+  width: 490px;
+  background-color: #fff;
+  margin-right: 2px;
+  float: left;
+}
+.hero4 img
+{
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 2px;
+  float: left;
+}
+.hero5
+{
+  height: 180px;
+  width: 300px;
+
+  margin-top:10px;
+  margin-right: 20px;
+  float: right;
+}
+.hero2
+{
+  height: 200px;
+  width: 490px;
+  background-color: #fff;
+  margin-left: 4px;
+  float: right;
+}
+.hero6 img
+{
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 2px;
+  float: left;
+}
+.hero7
+{
+  height: 180px;
+  width: 300px;
+
+  margin-top:10px;
+  margin-right: 20px;
+  float: right;
+}
+.hero3
+{
+  height: 200px;
+  width: 490px;
+  background-color: #fff;
+  margin-left: 3px;
+  margin-right: 12px;
+  float: right;
+}
+
+
+
+
+
+
+.hero8 img
+{
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 2px;
+  float: left;
+
+}
+.hero9
+{
+  height: 180px;
+  width: 300px;
+
+  margin-top:10px;
+  margin-right: 20px;
+  float: right;
+
+}
+.hero9 i
+{
+  color: yellow;
+}
+.hero5 i
+{
+  color: yellow;
+}
+.hero7 i
+{
+  color: yellow;
+}
+.footer
+{
+  height: 300px;
+  width: 1520px;
+  background-color: orangered;
+  margin-top: 10px;
+}
+
+
+.outerl
+	{
+		width: 420px;
+		height: 400px;
+		float: left;
+
+		margin-left: 30px;
+		margin-top: 50px;
+		background-color:#fff;
+	}
+	.outerr
+	{
+		width: 1000px;
+		float: right;
+		margin-top: 50px;
+
+	}
+	.outerll
+	{
+		width: 420px;
+		height: 400px;
+		float: left;
+		border: 2px solid #fff;
+		margin-left: 30px;
+		margin-top: 80px;
+		background-color:#fff;
+	}
+	.outerrr
+	{
+		width: 1000px;
+		float: right;
+		margin-top: 80px;
+	}
+
+	.hf
+	{
+		color:black;
+		text-align: center;
+		text-decoration: overline underline;
+	}
+	.outerl ul
+	{
+		list-style-type: none;
+	}
+	.outerl ul li{
+		color: black;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	.btn-danger
+	{
+		margin-left: 40px;
+		margin-top: 30px;
+	}
+	.float-end
+	{
+		margin-right: 40px;
+	}
+
+
+
+	.outerll ul
+	{
+		list-style-type: none;
+	}
+	.outerll ul li{
+		color: black;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	.header3 img
+        {
+          height: 80px;
+          width: 80px;
+          border-radius: 100%;
+          margin-left: 80px;
+        }
+        .footer img
+{
+    height: 100px;
+}
+.footer
+{
+  background-color: black;
+  height: 500PX;
+  float:left;
+}
+
+.smi
+{
+    list-style-type: none;
+
+
+}
+
+.smi li
+{
+    display: inline-block;
+    background-color: black;
+    color:white;
+    padding: 1px 9px;
+    border-radius: 50px;
+}
+.smi2
+{
+    list-style-type: none;
+
+
+}
+
+.smi2 li
+{
+
+    background-color: black;
+    color:white;
+    padding: 1px 9px;
+    border-radius: 50px;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+	<div class="container-fluid">
+<div class="header3">
+          <img src="{% static 'images/c50ed7881c2768b703540a780e58ad44.jpg' %}" ><br/>
+          <h2>SWASTIK RESORT</h2>
+        </div>
+
+
+
+		  
+
+		<div class="outer2">
+	{% include "navbar.html" %}
+
+			<div class="outer3 ">
+				<div class="red">
+					<i class="fa-solid fa-home"></i>&nbsp;XYZ Road,ABC Buliding<br/>
+					Jaipur In
+				</div><br/>
+				<div class="red">
+					<i class="fa-solid fa-phone"></i>&nbsp;+91 9335423651<br/>
+					24hour open
+				</div><br/>
+				<div class="red">
+					<i class="fa-solid fa-envelope"></i>swastikresort@gmail.com<br/>
+					Email us your query
+				</div>
+			</div>
+			<div class="outer4">
+				<form>
+					<div class="row">
+						<div class="col-sm-12 mt-4">
+						  <input type="text" class="form-control" placeholder="Enter Your Name" aria-label="Name">
+						</div><br/><br/><br/>
+						<div class="col-sm-12 mt-3">
+						  <input type="text" class="form-control" placeholder="Enter email address" aria-label="email address">
+						</div><br/><br/><br/>
+						<div class="col-sm-12 mt-2">
+							<input type="text" class="form-control" placeholder="Enter Your Subject" aria-label="Subject">
+						  </div><br/><br/><br/>
+						  <div class="col-sm-12">
+						  <textarea placeholder="Message" class="form-control" ></textarea></div><br/><br/><br/>
+
+					  
+						</div><br/>
+					<div class="col-sm-6">
+					<input type="button" name="submit" value="Send Mail">
+					</div>
+
+						  
+				</form>
+			</div>
+		</div>
+
+	<div class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.99973606822!2d75.65047149601598!3d26.885141678786518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1668521689335!5m2!1sen!2sin" width="1500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</body>
+</html>

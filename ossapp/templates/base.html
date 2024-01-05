@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <title></title>
+    <style>
+        .a1
+        {
+        height:250px;
+        width:1490px;
+
+        line-spacing:0.2em;
+        line-height:2cm;
+        font-weight:800;
+        text-align:center;
+        color:white;
+        }
+         .a12
+        {
+        height:300px;
+        width:700px;
+
+        margin-left:20px;
+        border-radius:20px;
+        float:left;
+        }
+        .a12 img
+        {
+        height:300px;
+        width:700px;
+        border-radius:20px;
+
+        }
+        .a13 img
+        {
+        height:300px;
+        width:700px;
+        border-radius:20px;
+         margin-right:20px;
+        }
+         .a13
+        {
+        height:300px;
+        width:700px;
+       border-radius:20px;
+        float:right;
+        margin-right:20px;
+        }
+        .b2
+        {
+        margin-top:70px;
+        color:#fff;
+        text-align:center;
+        }
+        body
+        {
+        background-color:red;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="a1">
+        <h2 class="b2"><u>HOTEL DESCRIPTION</u></h2>
+        <P><h4>All rooms have a modern and luxury design with all the amenities to pamper the guests: free wifi,individual
+            air-conditioning, 42" LCD television,satellite TV channels, wireless telephone ,coffee and tea making facilities
+        ,iron station,pillow menu etc.</h4></P>
+    </div>
+    <div class="a1">
+        <div class="a12 shadow-lg">
+            <img src="{% static 'images/d-suite-parismaison_img_01.jpg'%}">
+        </div>
+        <div class="a13">
+            <h2 class="b2 mt-6"><i class="fa-solid fa-arrow-left-long "></i>&nbsp;&nbsp;1 Grand Suite (165sqm)<br/>1 Presidential Suite(200sqm)</h2>
+        <P><h4>The perfect room to enjoy the luxury of space.</h4></P>
+        </div>
+    </div>
+    <div class="a1">
+        <div class="a12 mt-5">
+             <h2 class="b2 mt-5">1 Grand Suite (135sqm)<br/>1 Presidential Suite(165sqm)&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long "></i></h2>
+        <P><h4>The perfect room to enjoy the luxury of space.<br/> Living room with large working desk, large main bathroom and secondary bathroom.</h4></P>
+        </div>
+        <div class="a13 mt-5 shadow-lg">
+            <img src="{% static 'images/Deluxe-Garden-View-2-2520x1400.jpg'%}">
+        </div>
+    </div>
+    <div class="a1">
+        <div class="a12 mt-5 shadow-lg">
+            <img src="{% static 'images/large_DDBDB.jpg' %}">
+        </div>
+        <div class="a13 mt-5">
+            <h2 class="b2 mt-6"><i class="fa-solid fa-arrow-left-long "></i>&nbsp;&nbsp;112 Deluxe Rooms (64sqm)</h2>
+        <P><h4>Standard rooms of the hotel.<br/> The perfect room to enjoy the luxury of space.</h4></P>
+        </div>
+    </div>
+
+     <div class="a1">
+        <div class="a13 mt-5 shadow-lg">
+            <img src="{% static 'images/346660697.jpg' %}">
+        </div>
+        <div class="a12 mt-5">
+                        <h2 class="b2 mt-6">32 Grand Premium (70sqm)&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long "></i></h2>
+       <P><h4>The perfect room to enjoy the luxury of space.<br/> Living room with large working desk, large main bathroom and secondary bathroom.</h4></P>
+        </div>
+    </div>
+
+     <div class="a1">
+        <div class="a12 mt-5 shadow-lg">
+            <img src="{% static 'images/Superior-Twin-2-1664x992.jpg' %}">
+        </div>
+        <div class="a13 mt-5 mb-5">
+            <h2 class="b2 mt-8"><i class="fa-solid fa-arrow-left-long "></i>&nbsp;&nbsp;84 Premium Rooms (32sqm)</h2>
+            <p><h4>Additional benefits such as special welcome amenities and free daily laundry.</h4></p>
+        </div>
+         <a href="{% url 'rd'%} " class=" btn btn-primary  ">Back</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

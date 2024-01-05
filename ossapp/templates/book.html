@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  rel="stylesheet" href="{% static 'css/bootstrap.css' %}"  >
+	<link  rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <title>Hotel Booking Website</title>
+
+    
+
+<style>
+
+    body
+    {
+    background-color:#fff;
+    }
+    body img
+    {
+        position: absolute;
+
+       
+    }
+
+body form
+{
+        position:absolute;
+
+
+       
+
+    }
+    .menu form
+    {
+   margin-top:3px;
+    margin-left:1px;
+     height:687px;
+        width:620px;
+        color:#fff;
+        font-weight: 800;
+		letter-spacing:0em;
+		//border:2px solid #fff;
+    box-shadow: 0 0 20px 0 #00d7c3 inset, 0 0 30px 3px #fff;
+    }
+    .menu
+    {
+
+        margin:0px auto;
+        height:687px;
+        width:620px;
+        border:1px solid black;
+
+
+
+       
+    }
+
+
+
+
+    .row
+    {
+      margin-top: 50px;
+    }
+
+
+
+
+
+
+
+.outer
+        {
+            height: 450px;
+            width: 1500px;
+            margin: 0px;
+            padding: 50px;
+
+
+        }
+
+        .row5
+        {
+            height: 350px;
+            width: 600px;
+            color: white;
+            float: left;
+            font-size:large;
+        }
+        .row2 img
+        {
+            height: 350px;
+            width: 600px;
+            background-color: red;
+            float: right;
+        }
+
+
+ .slider
+ {
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+ }
+
+ .row nav{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+ }
+
+ .header
+ {
+
+position: absolute;
+  height: 50px;
+  width: 1500px;
+ }
+ .header2
+ {
+
+  height: 50px;
+  width: 750px;
+  float: right;
+  margin-top: 50px;
+
+ }
+ .header3
+ {
+
+
+  height: 50px;
+  width: 650px;
+  float: left;
+  margin:40px;
+
+  color: #fff;
+
+
+ }
+
+
+
+ .header2 ul
+ {
+  list-style-type:none;
+ }
+
+ .header2 ul li
+ {
+  display: inline-block;
+  color: white;
+ }
+ .header2 ul li a
+{
+color:#fff;
+text-decoration:none;
+padding: 10px;
+padding-top:20px;
+margin: 15px;
+}
+
+.header2 ul li a:hover
+{
+
+  box-shadow: 0 0 6px 0 #00d7c3 inset, 0 0 10px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+  background-color: #00d7c3;
+}
+.content
+{
+  text-align: center;
+  position: absolute;
+  margin-top: 160px;
+
+}
+.content h2{
+  font-size: 110px;
+  color:#fff;
+  font-weight: 450;
+  margin: 100px;
+
+
+
+
+}
+
+
+.content a{
+  text-decoration: none;
+  display: inline-block;
+  color:#fff;
+  font-size: 20px;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  margin-top: 160px;
+  padding: 14px 70px;
+  margin-right: 60px;
+  margin-left: 50px;
+}
+.content a:hover{
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+  background-color: red;
+
+
+}
+
+.custmer
+{
+  height: 200px;
+  width: 1500px;
+
+  margin-top: 10px;
+  margin-left: 2px;
+}
+.hero1
+{
+  height: 200px;
+  width: 490px;
+  background-color: #fff;
+  margin-right: 2px;
+  float: left;
+}
+.hero4 img
+{
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 2px;
+  float: left;
+}
+.hero5
+{
+  height: 180px;
+  width: 300px;
+
+  margin-top:10px;
+  margin-right: 20px;
+  float: right;
+}
+.hero2
+{
+  height: 200px;
+  width: 490px;
+  background-color: #fff;
+  margin-left: 4px;
+  float: right;
+}
+.hero6 img
+{
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 2px;
+  float: left;
+}
+.hero7
+{
+  height: 180px;
+  width: 300px;
+
+  margin-top:10px;
+  margin-right: 20px;
+  float: right;
+}
+.hero3
+{
+  height: 200px;
+  width: 490px;
+  background-color: #fff;
+  margin-left: 3px;
+  margin-right: 12px;
+  float: right;
+}
+
+
+
+
+
+
+.hero8 img
+{
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 2px;
+  float: left;
+
+}
+.hero9
+{
+  height: 180px;
+  width: 300px;
+
+  margin-top:10px;
+  margin-right: 20px;
+  float: right;
+
+}
+.hero9 i
+{
+  color: yellow;
+}
+.hero5 i
+{
+  color: yellow;
+}
+.hero7 i
+{
+  color: yellow;
+}
+.footer
+{
+  height: 300px;
+  width: 1520px;
+  background-color: orangered;
+  margin-top: 10px;
+}
+
+
+.outerl
+	{
+		width: 420px;
+		height: 400px;
+		float: left;
+
+		margin-left: 30px;
+		margin-top: 50px;
+		background-color:#fff;
+	}
+	.outerr
+	{
+		width: 1000px;
+		float: right;
+		margin-top: 50px;
+
+	}
+	.outerll
+	{
+		width: 420px;
+		height: 400px;
+		float: left;
+		border: 2px solid #fff;
+		margin-left: 30px;
+		margin-top: 80px;
+		background-color:#fff;
+	}
+	.outerrr
+	{
+		width: 1000px;
+		float: right;
+		margin-top: 80px;
+	}
+
+	.hf
+	{
+		color:black;
+		text-align: center;
+		text-decoration: overline underline;
+	}
+	.outerl ul
+	{
+		list-style-type: none;
+	}
+	.outerl ul li{
+		color: black;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	.btn-danger
+	{
+		margin-left: 40px;
+		margin-top: 30px;
+		box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+	}
+	.float-end
+	{
+		margin-right: 40px;
+		margin-top:17px;
+		box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3 ;
+	}
+
+
+
+	.outerll ul
+	{
+		list-style-type: none;
+	}
+	.outerll ul li{
+		color: black;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	.header3 img
+        {
+          height: 80px;
+          width: 80px;
+          border-radius: 100%;
+          margin-left: 80px;
+        }
+        .footer img
+{
+    height: 100px;
+}
+.footer
+{
+  background-color: black;
+  height: 500PX;
+  float:left;
+}
+
+.smi
+{
+    list-style-type: none;
+
+
+}
+
+.smi li
+{
+    display: inline-block;
+    background-color: black;
+    color:white;
+    padding: 1px 9px;
+    border-radius: 50px;
+}
+.smi2
+{
+    list-style-type: none;
+
+
+}
+
+.smi2 li
+{
+
+    background-color: black;
+    color:white;
+    padding: 1px 9px;
+    border-radius: 50px;
+}
+
+.a
+{
+margin-top:6px;
+color:aqua;
+ font-weight: 800;
+		letter-spacing:0.1em;
+}
+.b
+{
+margin-top:1px;
+color:aqua;
+ font-weight: 800;
+		letter-spacing:0.1em;
+}
+hr
+{
+height:2px;
+background-color: white;
+border:none;
+}
+
+
+        </style>
+    </head>
+<body>
+    
+
+        
+        <img src="{% static 'images/Hotel-7-double-bedroom.jpg' %}" height="800px" width="1540px">
+
+        <div class="menu">
+
+
+
+    <form class="row g-2.5" method="post" action="{% url 'book' %}">
+
+            {% csrf_token %}
+
+        <h3 class="a mt-3">RESERVATION INFORMATION </h3>
+      <div class="col-md-5">
+        <label for="inputdate" class="form-label">CHECK-IN:</label>
+        <input type="date" class="form-control" id="inputdate" name="checkin">
+      </div>
+
+      <div class="col-md-5">
+        <label for="inputdate2" class="form-label">CHECK-OUT:</label>
+        <input type="date" class="form-control" id="inputdate2" name="checkout">
+      </div>
+
+            <br/>
+         <div class="col-md-2">
+
+        <label for="inputPerson" class="form-label">Person:</label>
+        <input type="number" class="form-control" id="inputPerson" name="person">
+      </div>
+      <div class="col-md-3">
+        <label for="inputGender" class="form-label">Gender:</label>
+        <select id="inputGender" class="form-select" name="gender">
+          <option selected>Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+
+      <div class="col-md-2">
+
+        <label for="inputAge" class="form-label">Age:</label>
+        <input type="number" class="form-control" id="inputAge" name="age">
+      </div>
+         <div class="col-md-3">
+          <label for="inputCity" class="form-label">Select City:</label>
+          <select id="inputCity" class="form-select" name="city">
+            <option selected>Choose City In Room</option>
+           <option>JAIPUR</option>
+            <option>KANPUR</option>
+            <option>ALLAHABAD</option>
+            <option>MIRZAPUR</option>
+            <option>SONEBHADRA</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="inputState" class="form-label">Select State:</label>
+          <select id="inputState" class="form-select" name="state">
+            <option selected>Choose State IN Room</option>
+            <option>UTTAR PRADESH</option>
+            <option>RAJASTHAN</option>
+          </select>
+        </div>
+
+        <h3 class="b mt-2">PERSONAL INFORMATION </h3>
+        <hr>
+        <div class="col-md-6">
+
+            <label for="inputName" class="form-label">NAME:</label>
+            <input type="text" class="form-control" id="inputName" name="name">
+          </div>
+
+
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="inputEmail4" name="email">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPhone" class="form-label">Phone No:</label>
+          <input type="text" class="form-control" id="inputPhone" name="phone1" size="10" value="+91" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPhone2" class="form-label"> Alternative Phone No:</label>
+
+          <input type="text" class="form-control" id="inputPhone2" name="phone2" size="10" value="+91"/>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address:</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address">
+        </div>
+
+
+
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+
+          </div>
+
+        </div>
+    <div class="col-12">
+
+
+        <button type="submit" class=" btn btn-primary float-end">SUBMIT</button>
+<a href="{% url 'rd'%} " class=" btn btn-primary float-end ">BACK</a>
+    </div>
+
+</form>
+
+</div>
+
+
+</body>
+</html>
