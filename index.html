@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <link  rel="stylesheet" href="css/bootstrap.css"  >
+	<link  rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src="js/bootstrap.bundle.js"></script>
+    <title>Hotel Booking Website</title>
+
+<style>
+
+
+
+ 
+.outer
+        {
+            height: 350px;
+           width: 500px;
+            margin: 0px;
+            padding: 50px;
+
+        }
+
+        .row5
+        {
+            height: 350px;
+            width: 600px;
+            color: white;
+            float: left;
+            font-size:large;
+
+        }
+        .row2 img
+        {
+            height: 350px;
+            width: 2000px;
+            background-color: red;
+            float: right;
+        }
+  body
+{
+
+    background-color:#202540;
+    
+}
+
+ .slider
+ {
+    color: white;
+
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0 0 10px 0 #fff inset, 0 0 20px 2px aqua;
+ }
+
+.row5 p
+{
+font-weight:500;
+text-align:left;
+font-size:18px;
+}
+ .row nav{
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+ }
+
+ .header
+ {
+
+position: absolute;
+  height: 50px;
+  width: 50px;
+ }
+ .header2
+ {
+
+  height: 50px;
+  width: 50px;
+  float: center;
+  margin-top: 30px;
+  margin-left: 0px;
+
+
+ }
+ .header3
+ {
+
+  position: absolute;
+  //height:40px;
+  width: 400px;
+  float:left;
+  margin:40px;
+
+
+  color: #fff;
+
+
+ }
+
+
+
+ .header2 ul
+ {
+  list-style-type:none;
+ }
+
+ .header2 ul li
+ {
+  display: inline-block;
+  color: white;
+
+ }
+ .header2 ul li a
+{
+color:#fff;
+text-decoration:none;
+padding: 10px;
+padding-top:20px;
+margin: 15px;
+}
+
+.header2 ul li a:hover
+{
+
+  box-shadow: 0 0 6px 0 #00d7c3 inset, 0 0 10px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+  background-color: #00d7c3;
+}
+.content
+{
+  text-align: center;
+  position: absolute;
+  //margin-top: 160px;
+
+}
+.content h2{
+  font-size: 50px;
+  color:#fff;
+  font-weight: 450;
+  //margin: 100px;
+
+
+
+
+}
+
+
+.content a{
+  text-decoration: none;
+  display: inline-block;
+  color:#fff;
+  font-size: 10px;
+  border: 2px solid #00d7c3;
+  border-radius: 50px;
+  //margin-top: 160px;
+  //padding: 14px 70px;
+  margin-right: 60px;
+  margin-left: 50px;
+}
+.content a:hover{
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 2px solid #00d7c3;
+  background-color: red;
+
+
+}
+
+.custmer
+{
+  height: 300px;
+  width: 1500px;
+
+
+  margin-left: 2px;
+}
+.hero1
+{
+  height: 250px;
+  width: 1090px;
+  background-color: #fff;
+  margin-right: 2px;
+  margin-left:200px;
+  float: left;
+  border-radius:30px 30px 30px 30px;
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+}
+.hero4 img
+{
+  height: 100px;
+  width: 100px;
+
+  border-radius: 100%;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 2px;
+  float: left;
+}
+.hero5
+{
+  height: 180px;
+  width: 300px;
+
+  margin-top:15px;
+  margin-right: 20px;
+  float: right;
+}
+.hero5 p
+{
+margin-top:8px;
+}
+.hero2
+{
+  height: 250px;
+  width: 490px;
+  background-color: #fff;
+  margin-right:200px;
+  float: right;
+  border-radius:30px 30px 30px 30px;
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+}
+.hero6 img
+{
+  height: 100px;
+  width: 100px;
+
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 2px;
+  float: left;
+}
+.hero7
+{
+  height: 180px;
+  width: 300px;
+
+  margin-top:20px;
+  margin-right: 20px;
+  float: right;
+}
+.hero3
+{
+  height: 250px;
+  width: 490px;
+  background-color: #fff;
+  margin-left: 6px;
+  margin-right: 12px;
+  float: right;
+  border-radius:0 30px 0 30px;
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+}
+
+
+
+
+
+
+.hero8 img
+{
+  height: 100px;
+  width: 100px;
+
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 2px;
+  float: left;
+
+}
+.hero9
+{
+  height: 180px;
+  width: 300px;
+
+  margin-top:20px;
+  margin-right: 20px;
+  float: right;
+
+}
+.hero9 i
+{
+  color: yellow;
+}
+.hero5 i
+{
+  color: yellow;
+}
+.hero7 i
+{
+  color: yellow;
+}
+.footer
+{
+  height: 300px;
+  width: 1520px;
+  background-color: orangered;
+  margin-top: 10px;
+}
+
+
+.outerl
+	{
+		width: 420px;
+		height: 400px;
+		float: left;
+
+		margin-left: 30px;
+		margin-top: 50px;
+		background-color:#fff;
+	}
+	.outerr
+	{
+		width: 1000px;
+		float: right;
+		margin-top: 50px;
+
+	}
+	.outerll
+	{
+		width: 420px;
+		height: 400px;
+		float: left;
+		border: 2px solid #fff;
+		margin-left: 30px;
+		margin-top: 80px;
+		background-color:#fff;
+	}
+	.outerrr
+	{
+		width: 1000px;
+		float: right;
+		margin-top: 80px;
+	}
+
+	.hf
+	{
+		color:black;
+		text-align: center;
+		text-decoration: overline underline;
+	}
+	.outerl ul
+	{
+		list-style-type: none;
+	}
+	.outerl ul li{
+		color: black;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 100;
+	}
+
+	.btn-danger
+	{
+		margin-left: 40px;
+		margin-top: 30px;
+	}
+	.float-end
+	{
+		margin-right: 40px;
+	}
+
+
+
+	.outerll ul
+	{
+		list-style-type: none;
+	}
+	.outerll ul li{
+		color: black;
+		text-align: center;
+		font-size: 5px;
+		font-weight: 100;
+	}
+
+	.header3 img
+        {
+          height: 50px;
+          width: 80px;
+         // border-radius: 100%;
+          //margin-left: 80px;
+          //border:3px solid white;
+
+        }
+        .footer img
+{
+    height: 100px;
+}
+.footer
+{
+  background-color: black;
+  height: 500PX;
+  float:left;
+}
+
+.smi
+{
+    list-style-type: none;
+
+
+}
+
+.smi li
+{
+    display: inline-block;
+    background-color: black;
+    color:white;
+    padding: 1px 9px;
+    border-radius: 50px;
+}
+.smi2
+{
+    list-style-type: none;
+
+
+}
+
+.smi2 li
+{
+
+    background-color: black;
+    color:white;
+    padding: 1px 9px;
+    border-radius: 50px;
+}
+.roww
+{
+height:400px;
+width:1530px;
+background-color:black;
+margin-left:1px;
+
+
+}
+.row20
+{
+
+height:400px;
+width:380px;
+color:white;
+margin-top:30px;
+float:left;
+text-align:left;
+margin-left:20px;
+font-size:20px;
+line-height:2em;
+}
+.row30
+{
+height:400px;
+width:380px;
+margin-top:30px;
+float:right;
+color:white;
+line-height:3em;
+
+}
+.row40
+{
+height:400px;
+width:370px;
+margin-top:30px;
+float:right;
+color:white;
+line-height:2.8em;
+
+}
+
+
+.row40 h3
+{
+margin-left:10px;
+}
+.row20 h3
+{
+margin-left:px;
+}
+.row50 h3
+{
+margin-left:15px;
+}
+
+.row50
+{
+height:400px;
+width:380px;
+margin-top:30px;
+float:right;
+color:white;
+text-align:left;
+line-height:3em;
+}
+.boss ul
+{
+list-style-type:none;
+}
+.boss ul li
+{
+display:inline-block;
+letter-spacing:1em;
+margin-left:4px;
+
+}
+.detail
+{
+letter-spacing:0.1em;
+}
+.row40 nav{
+  margin-left: 100px;
+}
+
+}
+ 
+ 
+</style>
+
+</head>
+<body>
+    <div class="container-fluid">
+
+       <!--slider start-->
+        <div class="row">
+          <div class="header">
+            <div class="header2">
+
+              
+                
+                 <ul>
+
+       <li class="nav-item">
+                       <a class="nav-link" href="index.html">HOME</a>
+                     </li>
+        <li class="nav-item">
+                       <a class="nav-link" href="rd.html">ROOM DETAILS</a>
+                     </li>
+       <li class="nav-item">
+                       <a class="nav-link" href="blog.html">BLOG</a>
+                     </li>
+       <li class="nav-item">
+                       <a class="nav-link" href="room10.html">CONTACT AS</a>
+                     </li>
+       <li class="nav-item">
+           <a class="nav-link" href="rd.html">BOOK ONLINE</a>
+                     </li>
+        <li class="nav-item">
+                       <a class="nav-link" href="about.html">ABOUT AS</a>
+                     </li>
+
+     </ul>
+
+
+								 						
+								  
+								
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="header3">
+          <img src="images/c50ed7881c2768b703540a780e58ad44.jpg" ><br/>
+            <h2><b>SWASTIK RESORT</b></h2>
+        </div>
+
+        <div class="content">
+
+                                <a class="nav-link" href="rd.html">
+
+          <b>--BOOK ROOM--</b></a>
+          <marquee behavior="alternate" scrollamount="25" onmouseover="stop();" onmouseout="start();" >
+            <h2>&nbsp;ANCIENT & MODERN ROOMS</h2>
+
+            </marquee>
+
+
+
+        </div>
+    </div>
+
+				<!--navbar end-->
+
+
+
+
+
+
+           </nav>
+
+             <div class="col-sm-12  p-0 shadow-lg">
+                     <img src="images/Shiv-Vilas-jaipur.jpg" class="d-block width-8000px" alt="..." height="600px" width="1500px">
+                         </div>
+                            </div>
+
+                                <!--slider end-->
+
+                          <!--about section start-->
+
+                        <div class="outer">
+
+                            <div class="col-sm-12 p-0">
+
+                                <div class="row5 shadow-lg">
+                                         <h2 class="slider">SWASTIK RESORT SINCE AS 2000</h2></br>
+                                    <p class="detail">If you're looking for a luxurious retreat in the heart of pink city,jaipur,then look no further than Swastik Resort.this 32 acres palace themed resort offers a royal Rajputana life experience complete with palaces,gardens and heritage.you'll feel like a Rajput prince or princess while indulging in the luxury services and activities on offer.there's also an infinity pool,this 32 acres palace themed resort offers a royal Rajputana life experience complete with palaces and heritage.fitness center,and Ayurveda spa to pamper you.</p>
+
+
+
+                </div>
+                    <div class="row2">
+                        <img src="images/Shiv-Vilas-jaipur (1).jpg">
+                             </div>
+                                 </div>
+                                    </div>
+                     <!--about section end-->
+
+                                        <!--rooms start-->
+                                        <!--slider start-->
+                                        <h1 class="slider"> HOTEL BRANCHES</h1>
+
+                                        <div class="row ">
+                                          <div class="col-sm-12  p-0">
+                                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                                              <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                              </div>
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                <img src="images/201711221909293154-fbab1c08734711ebb48b0242ac110003.jpg" class="d-block w-100" alt="..." height="650px">
+                                                </div>
+                                                <div class="carousel-item">
+                                                <img src="images/fairmont-jaipur.jpg" class="d-block w-100" alt="..." height="650px">
+                                                </div>
+                                                <div class="carousel-item">
+                                                <img src="images/leelapalaceaydusk28003661800z2400.jpg" class="d-block w-100" alt="..." height="650px">
+                                                </div>
+                                              </div>
+                                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                              </button>
+                                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                              </button>
+                                              </div>
+                                          </div>
+                                        </div>
+				<!--slider end-->
+
+                                         <!--rooms end-->
+                    <BR/>
+                                         <!--hotel gallery start-->
+
+                                         <h1 class="slider"> HOTEL GALLERY</h1> <BR/>
+                                         <img src="images/1.jpg" height="400px" width="490" />&nbsp;&nbsp;
+                                            <img src="images/3.jpg" height="400px" width="490"  />&nbsp;&nbsp;
+                                            <img src="images/4.jpg" height="400px" width="490"/>&nbsp;&nbsp;
+                                            <br/>  <br/>
+                                                <img src="images/ab.jpeg" height="400px" width="490"  />&nbsp;&nbsp;
+                                                <img src="images/Басейн-с-атракции.jpg" height="400px" width="490" />&nbsp;&nbsp;
+                                                <img src="images/7.jpg" height="400px" width="490" />&nbsp;&nbsp;
+                                                <br/>  <br/>
+                                                <img src="images/6.jpg" height="400px" width="490"  />&nbsp;&nbsp;
+                                                <img src="images/xtreme-fitness-ludhiana-k3x46.jpg" height="400px" width="490" />&nbsp;&nbsp;
+                                                <img src="images/5.jpg" height="400px" width="490" />&nbsp;&nbsp;
+                                                <!--hotel gallery start-->
+<br/><br/>
+
+
+
+                                                <h1 class="slider"> OUR AWESOME FACILITIES & SERVICE</h1> <BR/>
+                                                <img src="images/Parking-Javea-Arenal.jpg" height="400px" width="490" title="PARKING FACILITIES" />&nbsp;&nbsp;
+                                                <img src="images/expediav2-322406-dbc6cb-811454.jpg" height="400px" width="490" title="SWIMMING FACILITIES" />&nbsp;&nbsp;
+                                                <img src="images/Facilities-head.jpg" height="400px" width="490" title="BAR FACILITIES" />&nbsp;&nbsp;
+                                                <br/>  <br/>
+
+                                                    <img src="images/housekeeping-banner.png" height="400px" width="490" title="HOUSE KEEPING SERVICE" />&nbsp;&nbsp;
+                                                    <img src="images/roomservice1.jpg" height="400px" width="490" title="FOOD SERVICE" />&nbsp;&nbsp;
+                                                    <img src="images/ZIM.jpg" height="400px" width="490" title="ZIM FACILITIES" />&nbsp;&nbsp;
+                                                    <br/>  <br/>
+                                                    <img src="images/Hotel_Fleet_P.jpg" height="400px" width="490" title="CAR FACILITIES" />&nbsp;&nbsp;
+                                                    <img src="images/Internet-marketing.jpg" height="400px" width="490" title="WIFI FACILITIES" />&nbsp;&nbsp;
+                                                    <img src="images/1637698679_bhp_9840-1.jpg" height="400px" width="490" title="COFFEE CAFE" />&nbsp;&nbsp;
+
+
+
+                                                    <br/><br/>
+                                                    <h1 class="slider">LATEST EVENT BLOGING SECTION</h1> <BR/>
+                                                    <img src="images/Jaipur-Destination-Wedding-1024x683.jpg" height="400px" width="490"  />&nbsp;&nbsp;
+
+                                                    <img src="images/MARRIGE.jpg" height="400px" width="490"  />&nbsp;&nbsp;
+                                                   &nbsp;&nbsp;
+                                                    <img src="images/1474460318_595x400.jpg" height="400px" width="490"  />&nbsp;&nbsp;
+
+
+
+
+                                                    <h1 class="slider mt-3">OUR GUEST LOVE AS</h1> <BR/>
+                                                    &nbsp;
+                                                        <div class="custmer">
+
+                                                          <div class="hero1">
+                                                            <div class="hero4">
+                                                              <img src="images/IMG_20221105_073617.jpg">
+
+                                                            </div>
+                                                            <div class="hero5">
+                                                                <h4>Good Hotel!</h4>
+                                                                <i class="fa-solid fa-star"></i>
+                                                              <i class="fa-solid fa-star"></i>
+                                                              <i class="fa-solid fa-star"></i>
+                                                              <i class="fa-solid fa-star"></i>
+                                                              <i class="fa-solid fa-star"></i>
+                                                              <p>Nice hotel with friendly staff. Breakfast good but could be better. Happy Hour a nice touch.</p>
+
+                                                                <p><b>SONU SINGH YADAV</b><br/>Delhi,India</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="hero2">
+                                                            <div class="hero6">
+                                                              <img src="images/IMG_20221105_073617.jpg">
+                                                            </div>
+                                                            <div class="hero7">
+                                                                <h4>Very good hotel!</h4>
+                                                                 <i class="fa-solid fa-star"></i>
+                                                              <i class="fa-solid fa-star"></i>
+                                                              <i class="fa-solid fa-star"></i>
+                                                              <i class="fa-solid fa-star"></i>
+                                                              <i class="fa-solid fa-star"></i>
+                                                              <p>Good location, reasonable price,clean room,great breakfast buffet</p>
+                                                                <p><b>SONU YADUVANSHI </b><br/>Mumbai,India</p>
+
+                                                            </div>
+                                                          </div>
+
+                                                        </div>
+
+
+
+
+
+
+                                                          <!--footer start-->
+			-
+         <!--footer start-->
+
+         -
+
+         <div class="roww ">
+             <div class="row20 ">
+                 <h3><b><u>SWASTIK RESORT</u></b></h3>
+                 <p>If you're looking for a luxurious retreat in the heart of pink city,jaipur,then look no further than Swastik Resort.this 32 acres palace themed resort offers a royal Rajputana life experience complete with palaces,gardens and heritage.
+             </div>
+                 <div class="row30">
+                     <h3> <b><u>CONTACT US</u></b></h3>
+                     <div class="outer3 ">
+				<div class="red">
+					<i class="fa-solid fa-home"></i>&nbsp;&nbsp;&nbsp;XYZ Road,ABC Buliding (Jaipur In)
+
+				</div>
+				<div class="red">
+					<i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+91 9335423651(24hour open)
+
+				</div>
+				<div class="red">
+					<i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;swastikresort@gmail.com
+<div class="boss">
+    <ul>
+    <li><i class="fa-brands fa-facebook"></i></li>
+							<li><i class="fa-brands fa-instagram"></i></li>
+							<li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-google"></i></li></ul>
+</div>
+				</div>
+
+
+			</div>
+                 </div>
+                     <div class="row40 ">
+                         <h3> <b><u>USEFUL LINKS</u></b></h3>
+                          <ul>
+
+                <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME</a>
+                              </li>
+                 <li class="nav-item">
+                                <a class="nav-link" href="rd.html">ROOM DETAILS</a>
+                              </li>
+                <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                              </li>
+                <li class="nav-item">
+                                <a class="nav-link" href="room10.html">CONTACT AS</a>
+                              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rd.html">BOOK ONLINE</a>
+                              </li>
+                 <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT AS</a>
+                              </li>
+
+              </ul>
+
+
+
+                     </div>
+                         <div class="row50 ">
+                             <h3> <b><u>LATEST NEWS</u></b></h3>
+
+        <ul>
+            <li>Swastik Resort in heritage</li>
+            <li>Swastik Resort in the heart of pink city</li>
+            <li>Nice Resort in jaipur</li>
+            <li>Old Resort</li>
+            <li>Heritage Resort</li>
+
+        </ul>
+
+              </div>
+    <center>
+        <p><b> <i class="text-danger">&copy;<u>Copyright 2022-2023 all right reserved, designed and developed by<i class="text-success">Web Developer Sonu</i></u></b></p>
+    </center>
+
+
+
+
+
+
+    <!--footer end-->
+
+
+    <!--footer end-->
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
